@@ -723,77 +723,6 @@ video {
   padding-left: 24px;
 }
 
-.language-dropdown {
-  position: relative;
-  display: inline-block;
-  font-family: 'Inter', system-ui, sans-serif;
-}
-
-.dropdown-toggle {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: #0b1220;
-  color: #e6e9ef;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.dropdown-toggle:hover {
-  background-color: #121b35;
-}
-
-.dropdown-toggle::after {
-  content: '▼';
-  font-size: 0.65rem;
-  margin-left: 0.5rem;
-  transition: transform 0.2s;
-}
-
-.language-dropdown.open .dropdown-toggle::after {
-  transform: rotate(180deg);
-}
-
-.dropdown-menu {
-  display: none;
-  undefined: undefined;
-  position: absolute;
-  top: calc(100% + 0.25rem);
-  left: 0;
-  background-color: #0b1220;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.5rem;
-  min-width: 150px;
-  z-index: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
-.dropdown-menu li {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  color: #e6e9ef;
-  font-weight: 500;
-  transition: background 0.2s, color 0.2s;
-}
-
-.dropdown-menu li:hover {
-  background-color: #1c2438;
-  color: #ffffff;
-}
-
-.language-dropdown.open .dropdown-menu {
-  display: block;
-}
-
-[data-i18n] {
-  white-space: pre-line;
-}
-
 @media (max-width: 992px) {
   .sidebar-navigation {
     display: none;
@@ -857,19 +786,19 @@ video {
               <li id="ilg2l">
                 <a href="index.html" id="i0xgq" class="gjs-t-link sidebar-link-downloads-active">
                   <img src="https://api.iconify.design/lucide-home.svg?color=%23ffffff" alt="Home icon" width="18" height="18" loading="lazy" id="i81pk" />
-                  <span data-i18n="nav_home" id="iyur9">Home</span>
+                  <span id="iyur9">Home</span>
                 </a>
               </li>
               <li id="il2s3">
                 <a href="docs/" id="iyaakh-2" class="gjs-t-link sidebar-link-documentation">
                   <img src="https://api.iconify.design/lucide-book-open.svg?color=%23ffffff" alt="Documentation icon" width="18" height="18" loading="lazy" id="icclw" />
-                  <span data-i18n="nav_docs" id="i2nt0q-2">Documentation</span>
+                  <span id="i2nt0q-2">Documentation</span>
                 </a>
               </li>
               <li id="itxwl">
                 <a href="download/" aria-current="page" id="id3xm" class="sidebar-link-home">
                   <img src="https://api.iconify.design/lucide-download.svg?color=%23ffffff" alt="Downloads icon" width="18" height="18" loading="lazy" id="i8yw7" />
-                  <span data-i18n="nav_downloads" id="ijc99">Downloads</span>
+                  <span id="ijc99">Downloads</span>
                 </a>
               </li>
             </ul>
@@ -877,16 +806,16 @@ video {
         </aside><!-- Downloads Content -->
         <section id="i752e" class="downloads-content"><!-- Page Title -->
           <div id="ivuwt" class="page-title-block">
-            <h1 data-i18n="title" id="i9g1f" class="gjs-t-h1 page-title">Build fast. Readable. Safe.</h1>
-            <p data-i18n="title_Under" id="ic67q" class="page-subtitle">With peak performance.</p>
+            <h1 id="i9g1f" class="gjs-t-h1 page-title">Build fast. Readable. Safe.</h1>
+            <p id="ic67q" class="page-subtitle">With peak performance.</p>
           </div><!-- Release Summary -->
           <div id="iz8gg" class="gjs-t-border release-summary-card">
             <div id="itt5a" class="release-summary-top">
               <div id="iksid" class="release-summary-text">
-                <h2 data-i18n="welcome" id="ibdju" class="gjs-t-h2 release-version">Welcome to nevo</h2>
+                <h2 id="ibdju" class="gjs-t-h2 release-version">Welcome to nevo</h2>
               </div>
               <div id="ihn5h" class="release-meta">
-                <span data-i18n="welcome_date" id="ive2c">Released on 2025-10-10</span>
+                <span id="ive2c">Released on 2025-10-10</span>
               </div>
             </div>
           </div><!-- OS Download Cards -->
@@ -895,11 +824,11 @@ video {
               <div id="i4b6u" class="os-header">
                 <div id="i5xil" class="os-title-group">
                   <img src="https://api.iconify.design/lucide-monitor.svg?color=%23e6e9ef" alt="Windows" width="22" height="22" loading="lazy" id="irvry" />
-                  <h3 data-i18n="article_1_title" id="ixznw" class="os-title">Latest Update</h3>
+                  <h3 id="ixznw" class="os-title">Latest Update</h3>
                 </div>
                 <span id="i6x13" class="os-version-badge">v1.0.0</span>
               </div>
-              <p data-i18n="title_1_under" class="os-description" id="imm2gc">
+              <p class="os-description" id="imm2gc">
                 V1 of Nevo officially released!
                 <br id="iiwhb4" />It is V1 but that doesn’t mean it ain’t fast… Just see for yourself
               </p>
@@ -912,10 +841,10 @@ video {
               <div id="i4b6u-2-2" class="os-header">
                 <div id="i5xil-2-2" class="os-title-group">
                   <img src="https://api.iconify.design/lucide:megaphone.svg?color=%23e6e9ef&amp;width=18&amp;height=18" alt="Windows" width="22" height="22" loading="lazy" id="irvry-2-2" />
-                  <h3 id="ixznw-2-2" data-i18n="card1" class="os-title">Insane speed</h3>
+                  <h3 id="ixznw-2-2" class="os-title">Insane speed</h3>
                 </div>
               </div>
-              <p title="" data-i18n="card1_under" id="i0zb9-2-2" class="os-description">Compile in milliseconds and ship lean, tight binaries without sacrificing readability.</p>
+              <p title="" id="i0zb9-2-2" class="os-description">Compile in milliseconds and ship lean, tight binaries without sacrificing readability.</p>
               <div id="i5om8-2-2" class="os-actions"></div>
               <ul id="i7b8c-2-2" class="os-notes-windows"></ul>
             </article>
@@ -923,10 +852,10 @@ video {
               <div id="i4b6u-2-2-2" class="os-header">
                 <div id="i5xil-2-2-2" class="os-title-group">
                   <img src="https://api.iconify.design/lucide:zap.svg?color=%23e6e9ef&amp;width=18&amp;height=18" alt="Windows" width="22" height="22" loading="lazy" id="irvry-2-2-2" />
-                  <h3 id="ixznw-2-2-2" data-i18n="card2" class="os-title">Best optimizations</h3>
+                  <h3 id="ixznw-2-2-2" class="os-title">Best optimizations</h3>
                 </div>
               </div>
-              <p id="i0zb9-2-2-2" data-i18n="card2_under" class="os-description">Designed with modern optimization techniques to deliver peak performance.</p>
+              <p id="i0zb9-2-2-2" class="os-description">Designed with modern optimization techniques to deliver peak performance.</p>
               <div id="i5om8-2-2-2" class="os-actions"></div>
               <ul id="i7b8c-2-2-2" class="os-notes-windows"></ul>
             </article>
@@ -934,10 +863,10 @@ video {
               <div id="i4b6u-2-2-2-2" class="os-header">
                 <div id="i5xil-2-2-2-2" class="os-title-group">
                   <img src="https://api.iconify.design/lucide:sliders.svg?color=%23e6e9ef&amp;width=18&amp;height=18" alt="Windows" width="22" height="22" loading="lazy" id="irvry-2-2-2-2" />
-                  <h3 id="ixznw-2-2-2-2" data-i18n="card3" class="os-title">Runs without requirements</h3>
+                  <h3 id="ixznw-2-2-2-2" class="os-title">Runs without requirements</h3>
                 </div>
               </div>
-              <p id="i0zb9-2-2-2-2" data-i18n="card3_under" class="os-description">No extra setup needed. Everything you need is included in the installer. Simply script, compile, run.</p>
+              <p id="i0zb9-2-2-2-2" class="os-description">No extra setup needed. Everything you need is included in the installer. Simply script, compile, run.</p>
               <div id="i5om8-2-2-2-2" class="os-actions"></div>
               <ul id="i7b8c-2-2-2-2" class="os-notes-windows"></ul>
             </article>
@@ -948,91 +877,6 @@ video {
         </section>
       </div>
     </main><!-- Footer -->
-    <script id="iqgbai">
-      const translations = {
-        en: {
-          nav_home: "Home",
-          nav_docs: "Documentation",
-          nav_downloads: "Downloads",
-          title: "Build fast. Readable. Safe.",
-          title_Under: "With peak performance.",
-          welcome: "Welcome to nevo",
-          welcome_date: "Released on 2025-10-10",
-          article_1_title: "Latest Update",
-          title_1_under: "V1 of nevo officially released!\n It is V1 but that doesn’t mean it\n aint fast… Just see for yourself \n",
-          card1: "Insane speed",
-          card1_under: "Compile in seconds and ship\n clean, tight binaries without\n sacrificing readability.",
-          card2: "Best optimizations",
-          card2_under: "Design with modern\n optimization techniques to\n deliver peak performance.",
-          card3: "Runs without requirements",
-          card3_under: "No extra setup is needed.\n Everything you need is included\n in the installer. Simply script,\n compile, run",
-        },
-        nl: {
-          nav_home: "Thuis",
-          nav_docs: "Documentatie",
-          nav_downloads: "downloaden",
-          title: "Bouw snel. Leesbaar. Veilig.",
-          title_Under: "Met de beste prestatie.",
-          welcome: "Welkom bij nevo",
-          welcome_date: "Uitgebracht op 10 oktober 2025",
-          article_1_title: "Laatste Update",
-          title_1_under: "V1 van nevo officieel uitgebracht!\n Het is V1, maar dat betekent niet dat het niet snel is... Kijk zelf maar \n",
-          card1: "Ongelofelijke snelheid",
-          card1_under: "Compileer in enkele seconden en lever schone, compacte binaire bestanden zonder dat dit ten koste gaat van de leesbaarheid.",
-          card2: "Beste optimalisaties",
-          card2_under: "Ontwerp met moderne optimalisatietechnieken voor topprestaties.",
-          card3: "Draait zonder vereisten",
-          card3_under: "Er is geen extra installatie nodig. Alles wat u nodig hebt, is inbegrepen in het installatieprogramma. Gewoon scripten, compileren en uitvoeren."
-        },
-        fr: {
-          nav_home: "Accueil",
-          nav_docs: "Documentation",
-          nav_downloads: "Téléchargements",
-          title: "Rapide. Lisible. Sûr.",
-          title_Under: "Avec des performances optimales.",
-          welcome: "Bienvenue sur Nevo",
-          welcome_date: "Publié le 10 octobre 2025",
-          article_1_title: "Dernière mise à jour",
-          title_1_under: "La V1 de Nevo est officiellement publiée !\n C'est la V1, mais cela ne signifie pas qu'elle n'est pas rapide... Voyez par vous-même \n",
-          card1: "Vitesse incroyable",
-          card1_under: "Compilez en quelques secondes et obtenez des binaires propres et compacts sans sacrifier la lisibilité.",
-          card2: "Meilleures optimisations",
-          card2_under: "Concevez avec des techniques d'optimisation modernes pour des performances maximales.",
-          card3: "Fonctionne sans prérequis",
-          card3_under: "Aucune configuration supplémentaire n'est nécessaire. Tout ce dont vous avez besoin est inclus dans l'installateur. Il suffit de script, compiler, exécuter."
-        }
-
-      };
-
-      const dropdown = document.querySelector('.language-dropdown');
-      const toggle = dropdown.querySelector('.dropdown-toggle');
-      const menu = dropdown.querySelector('.dropdown-menu');
-
-      toggle.addEventListener('click', () => {
-        dropdown.classList.toggle('open');
-      });
-
-      window.addEventListener('click', (e) => {
-        if (!e.target.closest('.language-dropdown')) {
-          dropdown.classList.remove('open');
-        }
-      });
-
-      menu.querySelectorAll('li').forEach(item => {
-        item.addEventListener('click', () => {
-          const lang = item.dataset.lang;
-          toggle.textContent = item.textContent; // Updated language
-          dropdown.classList.remove('open');
-
-          // Apply translations
-          document.querySelectorAll("[data-i18n]").forEach(el => {
-            const key = el.getAttribute("data-i18n");
-            el.textContent = translations[lang][key] || key;
-          });
-          localStorage.setItem('lang', lang);
-        });
-      });
-    </script>
   </body>
 
 </html>
