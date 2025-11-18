@@ -1,0 +1,36 @@
+<!-- Package Managers -->
+          <section class="gjs-t-border package-managers-section">
+            <h3 class="package-managers-title">Install via package manager</h3>
+            <div class="package-managers-grid">
+              <div class="gjs-t-border package-manager-card">
+                <div class="package-manager-header">
+                  <img src="https://api.iconify.design/lucide-beer.svg?color=%23e6e9ef" alt="Homebrew" width="18" height="18" loading="lazy" />
+                  <strong class="package-manager-name">Homebrew (macOS)</strong>
+                </div>
+                <pre class="package-manager-code-block">
+<code>brew install yourlang</code>
+</pre>
+              </div>
+
+              <div class="gjs-t-border package-manager-card">
+                <div class="package-manager-header">
+                  <img src="https://api.iconify.design/lucide-package.svg?color=%23e6e9ef" alt="Chocolatey" width="18" height="18" loading="lazy" />
+                  <strong class="package-manager-name">Chocolatey (Windows)</strong>
+                </div>
+                <pre class="package-manager-code-block">
+<code>choco install yourlang</code>
+</pre>
+              </div>
+
+              <div class="gjs-t-border package-manager-card">
+                <div class="package-manager-header">
+                  <img src="https://api.iconify.design/lucide-box.svg?color=%23e6e9ef" alt="APT" width="18" height="18" loading="lazy" />
+                  <strong class="package-manager-name">APT (Debian/Ubuntu)</strong>
+                </div>
+                <pre class="package-manager-code-block">
+<code>sudo apt update &amp;&amp; sudo apt install yourlang</code>
+</pre>
+              </div>
+            </div>
+            <p class="package-managers-note">Some package manager versions may lag behind the official release.</p>
+          </section>
