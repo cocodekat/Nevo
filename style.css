@@ -690,11 +690,15 @@ video {
 }
 
 #Cross-OS-2-2 {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 #Cross-OS-2 {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#Cross-OS-2-2-4 {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 @media (max-width: 992px) {
