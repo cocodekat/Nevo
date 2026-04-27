@@ -12,3 +12,8 @@ For licensing inquiries, partnerships, or permissions, please contact us on disc
 # Transpiler made for quick testing and inasnely good result.
 
 It is very well adviced to use the transpiler at the moment, as the compiler is still far in developent. Expected release date for official version 1 of © Nevo compiler is not yet determined.
+
+# Project started on monday, 8-12-2025
+
+Version 1 is now officially released on monday, 27-4-2026
+It is written only for ARM64 assembly found on newer macbook devices.
