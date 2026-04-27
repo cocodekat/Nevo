@@ -1,0 +1,8 @@
+_main() {
+num x = 1
+jump _hello(x)
+}
+
+_hello(var) {
+print(var)
+}

@@ -1,2 +1,2 @@
-zip: zip -r "release-v1.zip" "release-v1" -x "__MACOSX/*"
+zip: zip -r "release-v1.zip" "v1" -x "__MACOSX/*"
 update: update file/folder
