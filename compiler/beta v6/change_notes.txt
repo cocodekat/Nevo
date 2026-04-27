@@ -1,0 +1,9 @@
+loops added ->
+
+loop <amount> {
+    body
+}
+
+the amount can either be a number, variable or a math problem
+
+2/1/2026

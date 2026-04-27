@@ -1,0 +1,4 @@
+printing (strings and variables) but better
+
+print("hi")
+print(var)

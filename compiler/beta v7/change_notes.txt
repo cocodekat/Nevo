@@ -1,0 +1,11 @@
+added an extra transpiler, added scopes ->
+
+defining:
+
+scoped num var = ...
+
+calling:
+
+$var
+
+11/1/2026

@@ -1,0 +1,19 @@
+if/else added ->
+
+if <statement> {
+    things
+} else { <- Make sure else is on the same line as closing brace
+    more things
+}
+
+functions can contain parameters
+
+_func(par, par, etc) {
+    use ur parameters here
+}
+
+_main() {
+    bl _func(var, var, etc)
+}
+
+1/1/2026

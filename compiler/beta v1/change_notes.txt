@@ -1,0 +1,2 @@
+variable storage in regs w1-w30
+printing (just strings)

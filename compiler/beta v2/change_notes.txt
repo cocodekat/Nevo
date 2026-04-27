@@ -1,0 +1,2 @@
+variable storage in regs w1-w30 changed to storage in RAM
+printing (just strings)

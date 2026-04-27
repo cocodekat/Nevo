@@ -1,0 +1,11 @@
+_main() {
+    num x = 1
+    jump _loop
+}
+_loop() {
+    loop 10 {
+        print(x)
+        x = x + 1
+        print("\n")
+    }
+}
