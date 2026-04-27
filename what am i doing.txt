@@ -1,1 +1,0 @@
-it works on macos but on on windows due to tcc not supporting cpp, now making own compiler

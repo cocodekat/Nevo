@@ -4,11 +4,11 @@
 # -----------------------------
 # Hardcoded variables
 # -----------------------------
-ZIP_URL="https://github.com/cocodekat/nevo-lang/raw/main/versions/nevo-v1.zip?download=1"
+ZIP_URL="https://github.com/cocodekat/nevo-lang/raw/main/versions/release-v1.zip?download=1"
 DOWNLOADS_DIR="$HOME/Downloads"
 ZIP_NAME="nevo.zip"
 EXTRACT_DIR="nevo"
-INSTALLER_PATH="$DOWNLOADS_DIR/$EXTRACT_DIR/nevo-v1/installer/install.sh"
+INSTALLER_PATH="$DOWNLOADS_DIR/$EXTRACT_DIR/release-v1/installer/install.sh"
 
 # -----------------------------
 # Download ZIP
@@ -45,8 +45,9 @@ else
     exit 1
 fi
 
+chmod +x $HOME/nevo/run.sh
+
 # -----------------------------
 # Cleanup (optional)
 # -----------------------------
 echo "🧹 Cleaning up..."
-rm -rf "$DOWNLOADS_DIR/$ZIP_NAME" "$DOWNLOADS_DIR/$EXTRACT_DIR"

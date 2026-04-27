@@ -8,5 +8,5 @@ fi
 INPUT="$1"
 OUTNAME="$2"
 
-./compiler "$INPUT" out.s
-clang out.s -o "$OUTNAME"
+$HOME/nevo/compiler "$INPUT"
+clang "$HOME/nevo/output.s" -o "$OUTNAME"
