@@ -1,15 +1,8 @@
 # Nevo
 
-© 2025 Modulix. All rights reserved.
+This repository contains two separate Nevo implementations:
 
-Nevo is an original programming language developed and owned by Modulix.
-You are permitted to use and modify Nevo for personal or internal projects. However, redistribution, republishing, or any form of public or commercial distribution of Nevo or its source code—modified or unmodified—is strictly prohibited without prior written consent from Modulix.
+- [`compiler/`](compiler/) is the v1.2 ARM64 compiler. It remains independent and is not part of the transpiler layout.
+- [`transpiler/`](transpiler/) is the portable C transpiler, organized for separate macOS and Windows distribution work.
 
-By using Nevo, you agree to respect the intellectual property rights of Modulix and comply with these usage terms.
-
-For licensing inquiries, partnerships, or permissions, please contact us on discord, dm @cocodekat.
-
-# Project started on monday, 8-12-2025
-
-Version 1 is now officially released on monday, 27-4-2026
-It is written only for ARM64 assembly found on newer macbook devices.
+See the README in each implementation folder for its own build and development details. Historical releases, installers, and early source snapshots live under `transpiler/archive/`.
