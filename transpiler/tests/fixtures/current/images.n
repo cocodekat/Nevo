@@ -1,0 +1,7 @@
+int main() {
+
+    npxm(compile("nevo.png", "nevo.npxm"));
+    npxm(depile("nevo.npxm", "output.png"));
+
+    return 0;
+}

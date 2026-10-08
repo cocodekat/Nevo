@@ -1,0 +1,19 @@
+_main() {
+    let num x be 5;
+    let txt word be "nevo";
+    let bool ready be true;
+    let array values be [1, 2];
+    let file report be createf("let-test.txt");
+    global let num shared be 9;
+
+    values.yeet(x);
+    writef(report, word);
+    if ready {
+        print(values.length());
+        print("|");
+        print(report);
+        print("|");
+        print(shared);
+        print("\n");
+    }
+}

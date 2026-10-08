@@ -1,0 +1,12 @@
+_main() {
+    num answer = _add(20, 22);
+    num shared = 1;
+    num updated = _update();
+    txt message = _message();
+
+    print(answer);
+    print(shared);
+    print(updated);
+    print(message);
+    print("\n");
+}

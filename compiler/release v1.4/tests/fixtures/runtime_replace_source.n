@@ -1,0 +1,19 @@
+num _getVersion() {
+    return 2;
+}
+
+_main() {
+    num x = 5;
+    print(x);
+    rvar(x);
+    num x = 6;
+    print(x);
+    print(_getVersion());
+
+    rfunc(_getVersion);
+    num _getVersion() {
+        return 1;
+    }
+
+    print(_getVersion());
+}

@@ -1,0 +1,35 @@
+_main() {
+    num comp = random(1, 3)
+    num player = 2
+
+    if player == comp {
+        print("tie!")
+        print("computer:")
+        print(comp)
+        print("player:")
+        print(player)
+    } 
+    if player == 1 {
+        if comp == 2 {
+            txt win = "comp"
+        } else {
+            txt win = "player"
+        }
+    } 
+    if player == 2 {
+        if comp == 3 {
+            txt win = "comp"
+        } else {
+            txt win = "player"
+        }
+    } 
+    if player == 3 {
+        if comp == 1 {
+            txt win = "comp"
+        } else {
+            txt win = "player"
+        }
+    }
+    print(win)
+
+}

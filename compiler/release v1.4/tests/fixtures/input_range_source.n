@@ -1,0 +1,5 @@
+_main() {
+    num age = input("age: ", 1, 120);
+    print(age);
+    print("\n");
+}

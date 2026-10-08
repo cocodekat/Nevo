@@ -1,0 +1,74 @@
+lore "slang_helper.n";
+
+maincharacter() {
+    txt name = gimme("");
+    yap(name);
+    yap("|");
+
+    bool truth = fr;
+    bool lie = cap;
+    bool shrug = ish;
+    sus truth {
+        yap("sus|");
+    }
+    nah lie {
+        yap("nah|");
+    }
+    if shrug {
+        yap("ish|");
+    } else {
+        yap("also-ish|");
+    }
+
+    num choice = vibe(10, 20);
+    bet choice = 10 || choice = 20;
+    num bounded = bonk(99, 1, 5);
+    yap(bounded);
+    yap("|");
+
+    num level = 1;
+    glowup(level);
+    bet level = 2;
+    ghost(level);
+    num level = 7;
+    yap(level);
+    yap("|");
+
+    array loot = [1, 2];
+    loot.yeet(3);
+    yap(loot.length());
+    yap("|");
+    yap(loot.yoink());
+    yap("|");
+
+    array words = ["old"];
+    words.yeet("new");
+    yap(words.yoink());
+    yap("|");
+
+    array emptyWords = [];
+    yeet(emptyWords, "standalone");
+    yap(yoink(emptyWords));
+    yap("|");
+
+    num turns = 0;
+    lockin {
+        glowup(turns);
+        if turns = 2 {
+            break;
+        }
+    }
+    yap(turns);
+    yap("|");
+
+    nap(1);
+    bruh();
+    _sidekick();
+    yap(_sideNumber());
+    yap("|");
+
+    sus cap {
+        skillissue("this branch must not run");
+    }
+    yap("done\n");
+}

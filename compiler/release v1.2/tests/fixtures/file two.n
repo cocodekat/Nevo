@@ -1,0 +1,8 @@
+num _add(a, b) {
+    return a + b;
+}
+
+num _update() {
+    shared = 9;
+    return shared;
+}

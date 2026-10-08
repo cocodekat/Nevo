@@ -1,0 +1,18 @@
+num _value() {
+    return 1;
+}
+
+rfunc(_value);
+
+num _value() {
+    return 2;
+}
+
+_main() {
+    num x = 5;
+    print(x);
+    rvar(x);
+    num x = 6;
+    print(x);
+    print(_value());
+}

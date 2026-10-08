@@ -1,0 +1,21 @@
+_main() {
+    file target = loadf("tests/fixtures/work-target.txt");
+    file source = loadf("tests/fixtures/source.txt");
+
+    writef(target, source);
+    print(target);
+
+    writef(target, source.line(2));
+    print(target);
+
+    writef(target, "one\ntwo\nthree");
+    writef(target.line(2), source);
+    print(target);
+
+    write(target.line(1), "hello");
+    print(target);
+
+    file created = createf("tests/fixtures/work-created.txt");
+    writef(created, "created");
+    print(created);
+}

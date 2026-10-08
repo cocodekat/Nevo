@@ -1,0 +1,7 @@
+_main() {
+    txt name = input("name: ");
+    num age = input("age: ");
+    print("hello");
+    print(name);
+    print(age);
+}

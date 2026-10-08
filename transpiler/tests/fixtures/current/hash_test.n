@@ -1,0 +1,7 @@
+int main() {
+    x = h1(h1_bin(0110));
+    print("%d\n", x);
+
+    y = sha256(sha256_bin(0110));
+    print("%d", y);
+}

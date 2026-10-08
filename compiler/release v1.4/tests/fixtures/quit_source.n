@@ -1,0 +1,5 @@
+_main() {
+    print("before quit");
+    quit();
+    print("unreachable");
+}

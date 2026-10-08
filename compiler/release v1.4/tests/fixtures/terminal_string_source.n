@@ -1,0 +1,42 @@
+_main() {
+    txt padded = "  hello,world  ";
+    txt clean = padded.trim();
+    array parts = clean.split(",");
+
+    print(clean);
+    print("|");
+    print(clean.length());
+    print("|");
+    print(clean.contains("world"));
+    print("|");
+    print(parts.length());
+    print("|");
+    print(parts[0]);
+    print("|");
+    print(parts[1]);
+    print("|");
+    print(str(42));
+    print("|");
+
+    num chosen = wheel(10, 20, 30, 40, 50);
+    if chosen = 10 || chosen = 20 || chosen = 30 || chosen = 40 || chosen = 50 {
+        print("wheel-ok");
+    }
+    print("|");
+    print(wheel("north", "south"));
+    print("|");
+
+    bool uncertain = maybe;
+    if'nt uncertain {
+        print("not-maybe");
+    } else {
+        print("maybe");
+    }
+    print("|");
+
+    txt key = keypress();
+    print(key);
+    print("|");
+    clear();
+    print("cleared\n");
+}

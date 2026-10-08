@@ -1,0 +1,8 @@
+sidequest _sidekick() {
+    yap("sidequest|");
+    return;
+}
+
+sidequest num _sideNumber() {
+    return 9;
+}

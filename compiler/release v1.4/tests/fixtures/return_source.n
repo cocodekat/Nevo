@@ -1,0 +1,48 @@
+_main() {
+    num x = _number();
+    txt message = _text();
+    file returned_file = _file();
+    num sum = _add(_number(), 8);
+    num combined = 10 + _number();
+
+    print(x);
+    print(message);
+    print(returned_file.line(2));
+    print(sum);
+    print(combined);
+
+    x = 6;
+    print(x);
+    _store(1, 2);
+    print(stored);
+    jump _done;
+}
+
+num _number() {
+    num z = 5;
+    return z;
+}
+
+txt _text() {
+    return "hello";
+}
+
+file _file() {
+    file loaded = loadf("tests/fixtures/return-file.txt");
+    return loaded;
+}
+
+num _add(a, b) {
+    return a + b;
+}
+
+_store(a, b) {
+    stored = a + b;
+    return;
+}
+
+_done() {
+    print("done");
+    print("\n");
+    return;
+}

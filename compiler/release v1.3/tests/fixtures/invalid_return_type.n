@@ -1,0 +1,8 @@
+_main() {
+    txt value = _bad();
+    print(value);
+}
+
+txt _bad() {
+    return 5;
+}

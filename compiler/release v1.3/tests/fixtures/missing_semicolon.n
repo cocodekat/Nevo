@@ -1,0 +1,4 @@
+_main() {
+    num x = 5
+    print(x);
+}

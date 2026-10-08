@@ -1,0 +1,26 @@
+_main() {
+    bool ready = true;
+    if ready { print("ready\n"); }
+    if !false { print("not false\n"); }
+
+    array values = [1, 2, 3];
+    values[1] = 7;
+    num sum = 0;
+    for num i = 0; i < values.length(); i = i + 1 {
+        if i = 1 { continue; }
+        sum += values[i];
+    }
+    print(sum); print("\n");
+
+    num n = 0;
+    while true {
+        n += 1;
+        if n = 2 { break; }
+    }
+    print(n); print("\n");
+
+    if n = 1 { print("bad\n"); }
+    else if n = 2 { print("else-if\n"); }
+    else { print("bad\n"); }
+    sleep(1);
+}

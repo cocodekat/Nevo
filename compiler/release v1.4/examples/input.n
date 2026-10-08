@@ -1,0 +1,10 @@
+_main() {
+    num total = _add(7, 8);
+    print(total);
+}
+
+num _add(a, b) {
+    num result = a + b;
+    return result;
+}
+

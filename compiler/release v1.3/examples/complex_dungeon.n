@@ -1,0 +1,76 @@
+// Build: ./run.sh examples/complex_dungeon.n -o dungeon
+// The report is written to dungeon-report.txt in the current directory.
+
+num _reward() {
+    return 1;
+}
+
+_main() {
+    txt name = input("Explorer name: ");
+    num difficulty = input("Difficulty (1-3): ", 1, 3);
+    file report = createf("dungeon-report.txt");
+
+    array danger = [1, 2, 3, 2, 4];
+    num hp = 12;
+    num gold = 0;
+    num potions = 2;
+    bool alive = true;
+
+    if difficulty = 3 {
+        rfunc(_reward);
+        num _reward() {
+            return 3;
+        }
+    }
+
+    print("\nExplorer: "); print(name); print("\n");
+    print("Entering the dungeon...\n");
+
+    for num room = 0; room < danger.length(); room = room + 1 {
+        num event = rand(1, 3);
+        print("Room "); print(room + 1); print(": ");
+
+        if event = 1 {
+            num hit = danger[room] + difficulty;
+            hp = hp - hit;
+            print("monster hits for "); print(hit); print("\n");
+        } else if event = 2 {
+            num found = rand(2, 6) * _reward();
+            gold = gold + found;
+            print("found gold: "); print(found); print("\n");
+            continue;
+        } else {
+            potions = potions + 1;
+            print("found a potion\n");
+        }
+
+        while potions > 0 && hp < 10 {
+            hp = hp + 2;
+            potions = potions - 1;
+            print("used potion\n");
+        }
+
+        if hp <= 0 {
+            alive = false;
+            print("The expedition ends here.\n");
+            break;
+        }
+
+        sleep(120);
+    }
+
+    print("\nFinal HP: "); print(hp); print("\nGold: "); print(gold); print("\n");
+
+    if alive && gold >= 15 {
+        print("Legendary escape!\n");
+        writef(report, "Legendary escape\n");
+    } else if alive {
+        print("You escaped, but the dungeon keeps its secrets.\n");
+        writef(report, "Escaped\n");
+    } else {
+        print("Defeat. Try a lower difficulty.\n");
+        writef(report, "Defeat\n");
+    }
+
+    print("Report saved to dungeon-report.txt\n");
+}

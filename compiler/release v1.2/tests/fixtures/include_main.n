@@ -1,0 +1,6 @@
+#include "include_add.n"
+
+_main() {
+    num a = _add(2, 8);
+    print(a);
+}

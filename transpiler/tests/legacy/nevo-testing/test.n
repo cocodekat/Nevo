@@ -1,0 +1,4 @@
+_main() {
+ num a = 5 * 15 + 1
+ print(a)
+}

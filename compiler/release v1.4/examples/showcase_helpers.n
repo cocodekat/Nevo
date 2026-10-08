@@ -1,0 +1,39 @@
+// This imported file deliberately has no _main().
+
+num _reward() {
+    return 1;
+}
+
+file _loadMap() {
+    file map = loadf("examples/showcase_data.txt");
+    return map;
+}
+
+txt _rank(gold) {
+    if gold >= 12 {
+        return "Dungeon legend";
+    } else if gold >= 6 {
+        return "Treasure hunter";
+    } else {
+        return "Cautious explorer";
+    }
+}
+
+_updateSharedState() {
+    visits += 1;
+    partyHp[0] = partyHp[0] + 2;
+    if gameRunning {
+        write(sharedReport.line(2), heroName);
+    }
+    return;
+}
+
+_legacyAdd(a, b) {
+    legacyResult = a + b;
+    return;
+}
+
+_finish() {
+    print("\nShowcase complete. Read nevo-showcase-report.txt too!\n");
+    return;
+}

@@ -1,0 +1,4 @@
+ROOM 1: A brass key waits beneath a cracked statue.
+ROOM 2: An old fountain restores the party.
+ROOM 3: A mimic guards a small pile of gold.
+ROOM 4: The exit rune glows behind an iron gate.

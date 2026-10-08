@@ -1,0 +1,9 @@
+_main() {
+    txt name = "Philip";
+    num score = 7;
+    print("Hello, ");
+    print(name);
+    print("! Score: ");
+    print(score);
+    print("\n");
+}

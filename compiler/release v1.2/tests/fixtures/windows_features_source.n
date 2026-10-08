@@ -1,0 +1,29 @@
+_main() {
+    num negative = -7;
+    print(negative);
+    print(_local_math());
+
+    loop 2 {
+        print("loop");
+    }
+
+    if 3 < 4 {
+        print("numeric comparison");
+    } else {
+        print("wrong branch");
+    }
+
+    txt value = "same";
+    if value == "same" {
+        print("string comparison");
+    }
+
+    print(random(4, 4));
+    print(9 / 2);
+}
+
+num _local_math() {
+    scoped num local = 10;
+    $local -= 3;
+    return $local;
+}

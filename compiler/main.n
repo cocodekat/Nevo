@@ -1,0 +1,17 @@
+maincharacter() {
+    let txt name be gimme("who are you: ");
+    let bool based be ish;
+
+    sus based {
+        yap(name);
+        yap(" is based\n");
+    } else {
+        yap(name);
+        yap(" is cringe\n");
+    }
+
+    let array stuff be ["spoon"];
+    yeet(stuff, "brick");
+    yap(yoink(stuff));
+    yap("\n");
+}

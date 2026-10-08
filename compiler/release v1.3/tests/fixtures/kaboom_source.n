@@ -1,0 +1,8 @@
+_main() {
+    _stop_now();
+    print("unreachable");
+}
+
+num _stop_now() {
+    kaboom();
+}

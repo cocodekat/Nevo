@@ -1,0 +1,28 @@
+_main() {
+    global num score = 1;
+    global txt label = "score=";
+    global bool enabled = true;
+    global array points = [2, 3];
+    global file source = loadf("tests/fixtures/source.txt");
+    num x = 5;
+    score = _increase(score);
+    print(x);
+    print(score);
+    print("\n");
+    _showGlobals();
+}
+
+num _increase(value) {
+    num x = 40;
+    return value + x;
+}
+
+_showGlobals() {
+    print(label);
+    if enabled {
+        print(points[1]);
+    }
+    print("|");
+    print(source.line(1));
+    return;
+}
